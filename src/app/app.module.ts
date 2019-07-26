@@ -6,25 +6,23 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AppService } from './app.service';
 import { APP_CONFIG } from './service-basic';
-import { HeroesComponent } from './heroes/heroes.component';
-import { HeroListComponent } from './heroes/hero-list.component';
+import { HeroesModule } from './heroes/heroes/heroes.module';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    HeroesModule,
   ],
   declarations: [
     AppComponent,
-    HeroesComponent,
-    HeroListComponent,
   ],
   bootstrap: [
     AppComponent,
   ],
   providers: [
-    { provide: APP_CONFIG, useClass: AppService },
+    // { provide: APP_CONFIG, useClass: AppService },
   ],
 })
 

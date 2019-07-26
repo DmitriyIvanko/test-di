@@ -10,15 +10,12 @@ import { HeroListService } from './hero-list.service';
 import {
   ServiceBasic,
   APP_CONFIG,
-} from '../service-basic';
+} from '../../../service-basic';
 
 @Component({
   selector: 'app-hero-list',
   templateUrl: './hero-list.component.html',
   styleUrls: ['./hero-list.component.css'],
-  providers: [
-    { provide: APP_CONFIG, useClass: HeroListService }
-  ],
 })
 export class HeroListComponent implements OnInit {
   public heroes = HEROES;
