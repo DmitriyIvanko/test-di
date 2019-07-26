@@ -5,5 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class HeroService {
 
+  public id = Math.random();
+
   constructor() { }
 }
