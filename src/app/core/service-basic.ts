@@ -10,4 +10,4 @@ export class ServiceBasic {
   }
 }
 
-export const APP_CONFIG = new InjectionToken<ServiceBasic>('ServiceBasic');
+export const SERVICE_BASIC_DI_TOKEN = new InjectionToken<ServiceBasic>('ServiceBasic');

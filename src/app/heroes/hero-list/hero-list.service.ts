@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { ServiceBasic } from '../../../service-basic';
+import { ServiceBasic } from 'core';
 
 @Injectable()
 export class HeroListService extends ServiceBasic {

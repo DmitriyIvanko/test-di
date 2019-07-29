@@ -9,14 +9,14 @@ import { HeroListService } from './hero-list.service';
 
 import {
   ServiceBasic,
-  APP_CONFIG,
-} from '../../../service-basic';
+  SERVICE_BASIC_DI_TOKEN,
+} from 'core';
 
 @Component({
   providers: [
-    { provide: APP_CONFIG, useClass: HeroListService },
+    { provide: SERVICE_BASIC_DI_TOKEN, useClass: HeroListService },
   ],
-  selector: 'app-hero-list',
+  selector: 'tdi-hero-list',
   templateUrl: './hero-list.component.html',
   styleUrls: ['./hero-list.component.css'],
 })
@@ -26,7 +26,7 @@ export class HeroListComponent implements OnInit {
   public serviceName: string;
 
   constructor(
-    @Inject(APP_CONFIG) private serviceBasic: ServiceBasic,
+    @Inject(SERVICE_BASIC_DI_TOKEN) private serviceBasic: ServiceBasic,
   ) { }
 
 
