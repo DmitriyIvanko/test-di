@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { ServiceBasic } from './service-basic';
+import { ServiceBasic } from 'core';
 
 const SERVICE_NAME = 'APP_MODULE_SERVICE';
 

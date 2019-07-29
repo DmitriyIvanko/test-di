@@ -10,7 +10,7 @@ import { HeroesService } from './heroes.service';
 
 @Component({
   providers: [
-    { provide: SERVICE_BASIC_DI_TOKEN, useClass: HeroesService },
+    { provide: SERVICE_BASIC_DI_TOKEN, useExisting: HeroesService },
   ],
   selector: 'tdi-heroes',
   templateUrl: './heroes.component.html',

@@ -4,10 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import {
-  AppService,
-  SERVICE_BASIC_DI_TOKEN,
-} from 'core';
+import { AppService } from './app.service';
+import { SERVICE_BASIC_DI_TOKEN } from 'core';
 import { HeroesModule } from './heroes';
 
 @NgModule({
@@ -24,7 +22,7 @@ import { HeroesModule } from './heroes';
     AppComponent,
   ],
   providers: [
-    { provide: SERVICE_BASIC_DI_TOKEN, useClass: AppService },
+    AppService,
   ],
 })
 
