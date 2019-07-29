@@ -22,7 +22,7 @@ import { HeroesModule } from './heroes/heroes/heroes.module';
     AppComponent,
   ],
   providers: [
-    // { provide: APP_CONFIG, useClass: AppService },
+    { provide: APP_CONFIG, useClass: AppService },
   ],
 })
 

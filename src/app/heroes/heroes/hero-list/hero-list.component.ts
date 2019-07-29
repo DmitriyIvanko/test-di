@@ -13,6 +13,9 @@ import {
 } from '../../../service-basic';
 
 @Component({
+  providers: [
+    { provide: APP_CONFIG, useClass: HeroListService },
+  ],
   selector: 'app-hero-list',
   templateUrl: './hero-list.component.html',
   styleUrls: ['./hero-list.component.css'],
