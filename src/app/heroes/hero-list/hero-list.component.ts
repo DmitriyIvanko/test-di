@@ -25,6 +25,8 @@ export class HeroListComponent implements OnInit {
 
   public serviceName: string;
 
+  public serviceId: string;
+
   constructor(
     @Inject(SERVICE_BASIC_DI_TOKEN) private serviceBasic: ServiceBasic,
   ) { }
@@ -32,5 +34,6 @@ export class HeroListComponent implements OnInit {
 
   public ngOnInit(): void {
     this.serviceName = this.serviceBasic.getName();
+    this.serviceId = this.serviceBasic.getId();
   }
 }

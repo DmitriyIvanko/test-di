@@ -6,9 +6,6 @@ import { ServiceBasic } from './service-basic';
   providedIn: 'root',
 })
 export class RootService extends ServiceBasic {
-
-  public id = Math.random();
-
   constructor() {
     super('ROOT_SERVICE');
   }

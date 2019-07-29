@@ -4,9 +4,6 @@ import { ServiceBasic } from 'core';
 
 @Injectable()
 export class HeroesService extends ServiceBasic {
-
-  public id = Math.random();
-
   constructor() {
     super('HEROES_MODULE_SERVICE');
   }
