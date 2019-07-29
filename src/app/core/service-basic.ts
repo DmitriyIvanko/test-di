@@ -4,10 +4,11 @@ let ID_COUNT = 0;
 
 export class ServiceBasic {
 
-  private id = (ID_COUNT++).toString();
+  // private id = (ID_COUNT++).toString();
 
   constructor(
-    public name: string = 'SERVICE',
+    private name: string,
+    private id: string,
   ) { }
 
   public getName(): string {
