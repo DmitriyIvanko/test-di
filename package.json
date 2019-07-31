@@ -5,9 +5,11 @@
   "description": "Example project from an angular.io guide.",
   "scripts": {
     "lint": "tslint ./src/**/*.ts -t verbose",
-    "start_01": "ng serve --open",
+    "01_release": "ng build --prod --stats-json",
+    "02_bundle-report": "webpack-bundle-analyzer dist/stats-es5.json",
+    "03_start": "ng serve --open",
     "test": "ng test",
-    "build": "ng build --prod",
+    "build": "ng build",
     "e2e": "ng e2e",
     "ng": "ng"
   },
@@ -48,7 +50,8 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
-    "typescript": "~3.4.3"
+    "typescript": "~3.4.3",
+    "webpack-bundle-analyzer": "~3.3.2"
   },
   "repository": {}
 }
