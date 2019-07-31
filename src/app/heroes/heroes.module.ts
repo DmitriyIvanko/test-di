@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { HeroesRoutingModule } from './heroes-routing.module';
 import { HeroesComponent } from './heroes.component';
 // import { HeroListModule } from './hero-list';
-import { HeroesService } from './heroes.service';
+// import { HeroesService } from './heroes.service';
 
 @NgModule({
   declarations: [
