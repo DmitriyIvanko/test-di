@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { HeroListRoutingModule } from './hero-list-routing.module';
 import { HeroListComponent } from './hero-list.component';
-import { HeroListService } from './hero-list.service';
+// import { HeroListService } from './hero-list.service';
 
 @NgModule({
   declarations: [
