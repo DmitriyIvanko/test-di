@@ -4,7 +4,9 @@ import { ServiceBasic } from 'core';
 
 const SERVICE_NAME = 'APP_MODULE_SERVICE';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root',
+})
 export class AppService extends ServiceBasic {
 
   constructor() {

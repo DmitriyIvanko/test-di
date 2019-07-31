@@ -18,8 +18,8 @@ import { HeroesService } from './heroes.service';
     // HeroListModule,
     HeroesRoutingModule,
   ],
-  providers: [
-    HeroesService,
-  ],
+  // providers: [
+  //   HeroesService,
+  // ],
 })
 export class HeroesModule { }

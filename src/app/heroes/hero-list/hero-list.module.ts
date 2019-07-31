@@ -16,8 +16,8 @@ import { HeroListService } from './hero-list.service';
     CommonModule,
     HeroListRoutingModule,
   ],
-  providers: [
-    HeroListService,
-  ],
+  // providers: [
+  //   HeroListService,
+  // ],
 })
 export class HeroListModule { }

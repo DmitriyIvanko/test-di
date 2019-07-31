@@ -23,9 +23,9 @@ import { SERVICE_BASIC_DI_TOKEN } from 'core';
   bootstrap: [
     AppComponent,
   ],
-  providers: [
-    AppService,
-  ],
+  // providers: [
+  //   AppService,
+  // ],
 })
 
 export class AppModule { }

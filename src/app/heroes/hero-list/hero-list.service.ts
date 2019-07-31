@@ -4,7 +4,9 @@ import { ServiceBasic } from 'core';
 
 const SERVICE_NAME = 'HERO_LIST_MODULE_SERVICE';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root',
+})
 export class HeroListService extends ServiceBasic {
   constructor() {
     super(SERVICE_NAME, Math.random().toString());
