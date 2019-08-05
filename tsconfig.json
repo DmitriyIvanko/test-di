@@ -10,6 +10,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "paths": {
+      "app.settings": [ "src/app/app.settings" ],
       "core": [ "src/app/core" ]
     },
     "importHelpers": true,
