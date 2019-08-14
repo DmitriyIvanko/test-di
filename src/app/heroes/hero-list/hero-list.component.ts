@@ -2,6 +2,7 @@ import {
   Component,
   OnInit,
   Inject,
+  Optional,
 } from '@angular/core';
 import { HEROES } from './mock-heroes';
 
@@ -9,6 +10,9 @@ import {
   SERVICE_BASIC_DI_TOKEN,
   ServiceBasic,
 } from 'core';
+import {
+  Parent,
+} from '../heroes.component';
 import { HeroListService } from './hero-list.service';
 
 @Component({
@@ -28,6 +32,7 @@ export class HeroListComponent implements OnInit {
 
   constructor(
     @Inject(SERVICE_BASIC_DI_TOKEN) private serviceBasic: HeroListService,
+    @Optional() public parent: Parent,
   ) { }
 
   public ngOnInit(): void {
@@ -35,5 +40,7 @@ export class HeroListComponent implements OnInit {
     this.serviceId = this.serviceBasic.getId();
 
     this.serviceBasic.heroListMethod();
+    const a = this.parent.serviceId;
+    debugger;
   }
 }
