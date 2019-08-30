@@ -9,6 +9,10 @@ import { AppService } from './app.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SERVICE_BASIC_DI_TOKEN } from 'core';
+import { AlexComponent } from './alex/alex.component';
+import { CathyComponent } from './alex/cathy/cathy.component';
+import { CraigComponent } from './alex/craig/craig.component';
+import { CarolComponent } from './alex/carol/carol.component';
 
 @NgModule({
   imports: [
@@ -19,6 +23,10 @@ import { SERVICE_BASIC_DI_TOKEN } from 'core';
   ],
   declarations: [
     AppComponent,
+    AlexComponent,
+    CathyComponent,
+    CraigComponent,
+    CarolComponent,
   ],
   bootstrap: [
     AppComponent,
