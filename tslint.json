@@ -1,3 +1,4 @@
+// remove test only:
 {
   "extends": "tslint:recommended",
   "rules": {
